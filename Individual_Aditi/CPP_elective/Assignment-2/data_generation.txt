@@ -1,0 +1,189 @@
+[
+  '{{repeat(5)}}',
+  {
+    city : '{{city()}}',
+    
+    cinemas : [	
+    '{{repeat(3,5)}}',
+    {
+    cinema_name : '{{street()}}',
+      movies : [
+        
+        {
+          movie_name : function(tags){
+            var movies = ['Titanic', '365 Days of Summer'];
+            return movies[tags.integer(0, movies.length - 1)];
+          },
+          language : 'English',
+          genre : 'Romance',
+          release_date : '{{new Date()}}',
+          halls : [
+            '{{repeat(5)}}',
+            {
+              hall_num : '{{integer(1,4)}}',
+              date : '{{new Date()}}',
+              slot : '{{integer(1,5)}}',
+              seats : [
+                
+                '{{repeat(10)}}',
+                
+                {
+                  used :'False',
+                  user : '{{firstName()}}'
+                }
+           
+                ]
+              
+              
+              
+            }
+            
+            ]
+          
+          
+        },
+        {
+          movie_name : function(tags){
+            var movies = ['Jab We Met', 'Ashiqui'];
+            return movies[tags.integer(0, movies.length - 1)];
+          },
+          language : 'Hindi',
+          genre : 'Romance',
+          release_date : '{{new Date()}}',
+          halls : [
+            '{{repeat(5)}}',
+            {
+              hall_num : '{{integer(1,4)}}',
+              date : '{{new Date()}}',
+              slot : '{{integer(1,5)}}',
+              seats : [
+                
+                '{{repeat(10)}}',
+                
+                {
+                  used :'False',
+                  user : '{{firstName()}}'
+                }
+           
+                ]
+              
+              
+              
+            }
+            
+            ]
+          
+          
+        },
+        
+        {
+          movie_name : function(tags){
+            var movies = ['Fractured', 'The Game'];
+            return movies[tags.integer(0, movies.length - 1)];
+          },
+          language : 'English',
+          genre : 'Thriller',
+          release_date : '{{new Date()}}',
+          halls : [
+            '{{repeat(5)}}',
+            {
+              hall_num : '{{integer(1,4)}}',
+              date : '{{new Date()}}',
+              slot : '{{integer(1,5)}}',
+              seats : [
+                
+                '{{repeat(10)}}',
+                
+                {
+                  used :'False',
+                  user : '{{firstName()}}'
+                }
+           
+                ]
+              
+              
+              
+            }
+            
+            ]
+          
+          
+        },
+        {
+          movie_name : function(tags){
+            var movies = ['Kahani', 'Badla'];
+            return movies[tags.integer(0, movies.length - 1)];
+          },
+          language : 'Hindi',
+          genre : 'Thriller',
+          release_date : '{{new Date()}}',
+          halls : [
+            '{{repeat(5)}}',
+            {
+              hall_num : '{{integer(1,4)}}',
+              date : '{{new Date()}}',
+              slot : '{{integer(1,5)}}',
+              seats : [
+                
+                '{{repeat(10)}}',
+                
+                {
+                  used : 'False',
+                  user : '{{firstName()}}'
+                }
+           
+                ]
+              
+              
+              
+            }
+            
+            ]
+          
+          
+        },
+        {
+          movie_name : function(tags){
+            var movies = ['Phir Hera Pheri', 'Golmaal'];
+            return movies[tags.integer(0, movies.length - 1)];
+          },
+          language : 'Hindi',
+          genre : 'Comedy',
+          release_date : '{{new Date()}}',
+          halls : [
+            '{{repeat(5)}}',
+            {
+              hall_num : '{{integer(1,5)}}',
+              date : '{{new Date()}}',
+              slot : '{{integer(1,5)}}',
+              seats : [
+                
+                '{{repeat(10)}}',
+                
+                {
+                  used :'False',
+                  user : '{{firstName()}}'
+                }
+           
+                ]
+              
+              
+              
+            }
+            
+            ]
+          
+          
+        }
+        
+        
+        
+        
+        ]
+      
+      
+  }
+    ]
+    
+  }
+]
