@@ -492,14 +492,15 @@ void menuForUser(user curr_user){
                 cout<<"ENTER CITY NAME"<<endl;
                 getline(cin,line);
                 curr_user.searchByCity(line);
+                break;
             }
             case 6:{
                 curr_user.listCities();
+                break;
             }
             case 7:{
                cout<<"ENTER MOVIE TITLE"<<endl;
                getline(cin,line);
-               cout<<"  LINE IS:  "<<line<<endl;
                curr_user.selectMovie(line);
                break;
             }
@@ -529,7 +530,7 @@ void menu(){
         cout<<"\n\n <<<<<<<<<<<<<<<<<<<<<<<< WELCOME TO BOOK-MY-SHOW >>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n";
         cout<<"PRESS 1 TO BOOK FOR EXISITNG USER\n";
         cout<<"PRESS 2 FOR ADDING A NEW USER\n";
-        cout<<"PRESS 3 FOR EXITING THE G"<<endl;
+        cout<<"PRESS 3 FOR EXITING"<<endl;
         cin>>choice;
 
         system("clear");
